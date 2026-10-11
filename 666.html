@@ -6,66 +6,74 @@
 </head>
 <body>
 
-    <h1>洛杉磯道奇隊球員名單 (Los Angeles Dodgers)</h1>
-    <p>這是一份最新的道奇隊成員與守備位置介紹：</p>
+    <!-- 1. 嵌入道奇隊隊徽標誌 -->
+    <div style="text-align: center;">
+        <img src="https://wikimedia.org" alt="道奇隊徽" width="150">
+        <h1>洛杉磯道奇隊球員名單</h1>
+        <p>最新成員守備位置一覽表</p>
+    </div>
 
-    <h2>總教練 (Manager)</h2>
-    <ul>
-        <li>Dave Roberts — Manager</li>
-    </ul>
-
-    <h2>二刀流球員 (Two-Way Player)</h2>
-    <ul>
-        <li>#17 Shohei Ohtani — DH / Pitcher</li>
-    </ul>
-
-    <h2>投手 (Pitchers)</h2>
-    <ul>
-        <li>#3 Edwin Díaz — Pitcher</li>
-        <li>#7 Blake Snell — Pitcher</li>
-        <li>#11 Roki Sasaki — Pitcher</li>
-        <li>#18 Yoshinobu Yamamoto — Pitcher</li>
-        <li>#28 Bobby Miller — Pitcher</li>
-        <li>#29 Tarik Skubal — Pitcher</li>
-        <li>#31 Tyler Glasnow — Pitcher</li>
-        <li>#40 Kris Bubic — Pitcher</li>
-        <li>#41 Brock Stewart — Pitcher</li>
-        <li>#51 Alex Vesia — Pitcher</li>
-        <li>#59 Evan Phillips — Pitcher</li>
-        <li>#60 Edgardo Henriquez — Pitcher</li>
-        <li>#66 Tanner Scott — Pitcher</li>
-        <li>#86 Jack Dreyer — Pitcher</li>
-        <li>#96 Landon Knack — Pitcher</li>
-    </ul>
-
-    <h2>捕手 (Catchers)</h2>
-    <ul>
-        <li>#16 Will Smith — Catcher</li>
-        <li>#46 Hunter Feduccia — Catcher</li>
-        <li>#47 Ben Rortvedt — Catcher</li>
-        <li>#68 Dalton Rushing — Catcher</li>
-    </ul>
-
-    <h2>內野手 (Infielders)</h2>
-    <ul>
-        <li>#5 Freddie Freeman — Infielder</li>
-        <li>#6 Hyeseong Kim — Infielder</li>
-        <li>#13 Max Muncy — Infielder</li>
-        <li>#25 Tommy Edman — Infielder</li>
-        <li>#50 Mookie Betts — Infielder</li>
-        <li>#72 Miguel Rojas — Infielder</li>
-        <li>#76 Alex Freeland — Infielder</li>
-    </ul>
-
-    <h2>外野手 (Outfielders)</h2>
-    <ul>
-        <li>#8 Enrique Hernández — Outfielder</li>
-        <li>#12 Alex Call — Outfielder</li>
-        <li>#23 Kyle Tucker — Outfielder</li>
-        <li>#37 Teoscar Hernández — Outfielder</li>
-        <li>#44 Andy Pages — Outfielder</li>
-        <li>#95 Josue De Paula — Outfielder</li>
-    </ul>
+    <!-- 2. 使用表格呈現名單 -->
+    <!-- border="1" 可以讓表格顯示出框線 -->
+    <table border="1" cellpadding="8" cellspacing="0" style="margin: 0 auto; width: 80%;">
+        <thead>
+            <tr style="background-color: #f2f2f2;">
+                <th>背號</th>
+                <th>球員姓名 (Name)</th>
+                <th>守備位置 (Position)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 總教練 -->
+            <tr>
+                <td>-</td>
+                <td><b>Dave Roberts</b></td>
+                <td>總教練 (Manager)</td>
+            </tr>
+            <!-- 二刀流 -->
+            <tr>
+                <td>#17</td>
+                <td><b>Shohei Ohtani</b></td>
+                <td>二刀流 (DH / Pitcher)</td>
+            </tr>
+            <!-- 投手 -->
+            <tr><td>#3</td><td>Edwin Díaz</td><td>投手 (Pitcher)</td></tr>
+            <tr><td>#7</td><td>Blake Snell</td><td>投手 (Pitcher)</td></tr>
+            <tr><td>#11</td><td>Roki Sasaki</td><td>投手 (Pitcher)</td></tr>
+            <tr><td>#18</td><td>Yoshinobu Yamamoto</td><td>投手 (Pitcher)</td></tr>
+            <tr><td>#28</td><td>Bobby Miller</td><td>投手 (Pitcher)</td></tr>
+            <tr><td>#29</td><td>Tarik Skubal</td><td>投手 (Pitcher)</td></tr>
+            <tr><td>#31</td><td>Tyler Glasnow</td><td>投手 (Pitcher)</td></tr>
+            <tr><td>#40</td><td>Kris Bubic</td><td>投手 (Pitcher)</td></tr>
+            <tr><td>#41</td><td>Brock Stewart</td><td>投手 (Pitcher)</td></tr>
+            <tr><td>#51</td><td>Alex Vesia</td><td>投手 (Pitcher)</td></tr>
+            <tr><td>#59</td><td>Evan Phillips</td><td>投手 (Pitcher)</td></tr>
+            <tr><td>#60</td><td>Edgardo Henriquez</td><td>投手 (Pitcher)</td></tr>
+            <tr><td>#66</td><td>Tanner Scott</td><td>投手 (Pitcher)</td></tr>
+            <tr><td>#86</td><td>Jack Dreyer</td><td>投手 (Pitcher)</td></tr>
+            <tr><td>#96</td><td>Landon Knack</td><td>投手 (Pitcher)</td></tr>
+            <!-- 捕手 -->
+            <tr><td>#16</td><td>Will Smith</td><td>捕手 (Catcher)</td></tr>
+            <tr><td>#46</td><td>Hunter Feduccia</td><td>捕手 (Catcher)</td></tr>
+            <tr><td>#47</td><td>Ben Rortvedt</td><td>捕手 (Catcher)</td></tr>
+            <tr><td>#68</td><td>Dalton Rushing</td><td>捕手 (Catcher)</td></tr>
+            <!-- 內野手 -->
+            <tr><td>#5</td><td>Freddie Freeman</td><td>內野手 (Infielder)</td></tr>
+            <tr><td>#6</td><td>Hyeseong Kim</td><td>內野手 (Infielder)</td></tr>
+            <tr><td>#13</td><td>Max Muncy</td><td>內野手 (Infielder)</td></tr>
+            <tr><td>#25</td><td>Tommy Edman</td><td>內野手 (Infielder)</td></tr>
+            <tr><td>#50</td><td>Mookie Betts</td><td>內野手 (Infielder)</td></tr>
+            <tr><td>#72</td><td>Miguel Rojas</td><td>內野手 (Infielder)</td></tr>
+            <tr><td>#76</td><td>Alex Freeland</td><td>內野手 (Infielder)</td></tr>
+            <!-- 外野手 -->
+            <tr><td>#8</td><td>Enrique Hernández</td><td>外野手 (Outfielder)</td></tr>
+            <tr><td>#12</td><td>Alex Call</td><td>外野手 (Outfielder)</td></tr>
+            <tr><td>#23</td><td>Kyle Tucker</td><td>外野手 (Outfielder)</td></tr>
+            <tr><td>#37</td><td>Teoscar Hernández</td><td>外野手 (Outfielder)</td></tr>
+            <tr><td>#44</td><td>Andy Pages</td><td>外野手 (Outfielder)</td></tr>
+            <tr><td>#95</td><td>Josue De Paula</td><td>外野手 (Outfielder)</td></tr>
+        </tbody>
+    </table>
 
 </body>
 </html>
