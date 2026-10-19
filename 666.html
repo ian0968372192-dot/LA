@@ -1,79 +1,239 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>洛杉磯道奇隊球員名單</title>
+    <title>世界足壇巨星大百科</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #1e3d59;
+        }
+        .nav-links {
+            text-align: center;
+            margin-bottom: 30px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #17b978;
+            font-weight: bold;
+        }
+        .player-card {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .player-name {
+            color: #1e3d59;
+            border-bottom: 3px solid #17b978;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f7f9fa;
+            width: 25%;
+        }
+        ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- 1. 嵌入道奇隊隊徽標誌 -->
-    <div style="text-align: center;">
-        <img src="la-logo.svg" alt="道奇隊徽" width="150">
-        <h1>洛杉磯道奇隊球員名單</h1>
-        <p>最新成員守備位置一覽表</p>
+    <h1>⚽ 世界足壇巨星大百科 ⚽</h1>
+    
+    <div class="nav-links">
+        <strong>現役巨星：</strong>
+        <a href="#cr7">C羅</a> | <a href="#messi">梅西</a> | <a href="#neymar">內馬爾</a> | <a href="#mbappe">姆巴佩</a> | 
+        <a href="#haaland">哈蘭德</a> | <a href="#olise">奧利塞</a> | <a href="#bellingham">貝林漢姆</a> | 
+        <a href="#dembele">登貝萊</a> | <a href="#vinicius">維尼修斯</a> | <a href="#yamal">亞馬爾</a> | 
+        <a href="#modric">莫德里奇</a> | <a href="#doue">杜埃</a>
+        <br><br>
+        <strong>歷史傳奇：</strong>
+        <a href="#pele">比利</a> | <a href="#maradona">馬拉度納</a> | <a href="#beckham">貝克漢</a> | 
+        <a href="#ronaldinho">小羅納度</a> | <a href="#ronaldo_r9">大羅納度</a>
     </div>
 
-    <!-- 2. 使用表格呈現名單 -->
-    <!-- border="1" 可以讓表格顯示出框線 -->
-    <table border="1" cellpadding="8" cellspacing="0" style="margin: 0 auto; width: 80%;">
-        <thead>
-            <tr style="background-color: #f2f2f2;">
-                <th>背號</th>
-                <th>球員姓名 (Name)</th>
-                <th>守備位置 (Position)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- 總教練 -->
-            <tr>
-                <td>-</td>
-                <td><b>Dave Roberts</b></td>
-                <td>總教練 (Manager)</td>
-            </tr>
-            <!-- 二刀流 -->
-            <tr>
-                <td>#17</td>
-                <td><b>Shohei Ohtani</b></td>
-                <td>二刀流 (DH / Pitcher)</td>
-            </tr>
-            <!-- 投手 -->
-            <tr><td>#3</td><td>Edwin Díaz</td><td>投手 (Pitcher)</td></tr>
-            <tr><td>#7</td><td>Blake Snell</td><td>投手 (Pitcher)</td></tr>
-            <tr><td>#11</td><td>Roki Sasaki</td><td>投手 (Pitcher)</td></tr>
-            <tr><td>#18</td><td>Yoshinobu Yamamoto</td><td>投手 (Pitcher)</td></tr>
-            <tr><td>#28</td><td>Bobby Miller</td><td>投手 (Pitcher)</td></tr>
-            <tr><td>#29</td><td>Tarik Skubal</td><td>投手 (Pitcher)</td></tr>
-            <tr><td>#31</td><td>Tyler Glasnow</td><td>投手 (Pitcher)</td></tr>
-            <tr><td>#40</td><td>Kris Bubic</td><td>投手 (Pitcher)</td></tr>
-            <tr><td>#41</td><td>Brock Stewart</td><td>投手 (Pitcher)</td></tr>
-            <tr><td>#51</td><td>Alex Vesia</td><td>投手 (Pitcher)</td></tr>
-            <tr><td>#59</td><td>Evan Phillips</td><td>投手 (Pitcher)</td></tr>
-            <tr><td>#60</td><td>Edgardo Henriquez</td><td>投手 (Pitcher)</td></tr>
-            <tr><td>#66</td><td>Tanner Scott</td><td>投手 (Pitcher)</td></tr>
-            <tr><td>#86</td><td>Jack Dreyer</td><td>投手 (Pitcher)</td></tr>
-            <tr><td>#96</td><td>Landon Knack</td><td>投手 (Pitcher)</td></tr>
-            <!-- 捕手 -->
-            <tr><td>#16</td><td>Will Smith</td><td>捕手 (Catcher)</td></tr>
-            <tr><td>#46</td><td>Hunter Feduccia</td><td>捕手 (Catcher)</td></tr>
-            <tr><td>#47</td><td>Ben Rortvedt</td><td>捕手 (Catcher)</td></tr>
-            <tr><td>#68</td><td>Dalton Rushing</td><td>捕手 (Catcher)</td></tr>
-            <!-- 內野手 -->
-            <tr><td>#5</td><td>Freddie Freeman</td><td>內野手 (Infielder)</td></tr>
-            <tr><td>#6</td><td>Hyeseong Kim</td><td>內野手 (Infielder)</td></tr>
-            <tr><td>#13</td><td>Max Muncy</td><td>內野手 (Infielder)</td></tr>
-            <tr><td>#25</td><td>Tommy Edman</td><td>內野手 (Infielder)</td></tr>
-            <tr><td>#50</td><td>Mookie Betts</td><td>內野手 (Infielder)</td></tr>
-            <tr><td>#72</td><td>Miguel Rojas</td><td>內野手 (Infielder)</td></tr>
-            <tr><td>#76</td><td>Alex Freeland</td><td>內野手 (Infielder)</td></tr>
-            <!-- 外野手 -->
-            <tr><td>#8</td><td>Enrique Hernández</td><td>外野手 (Outfielder)</td></tr>
-            <tr><td>#12</td><td>Alex Call</td><td>外野手 (Outfielder)</td></tr>
-            <tr><td>#23</td><td>Kyle Tucker</td><td>外野手 (Outfielder)</td></tr>
-            <tr><td>#37</td><td>Teoscar Hernández</td><td>外野手 (Outfielder)</td></tr>
-            <tr><td>#44</td><td>Andy Pages</td><td>外野手 (Outfielder)</td></tr>
-            <tr><td>#95</td><td>Josue De Paula</td><td>外野手 (Outfielder)</td></tr>
-        </tbody>
-    </table>
+    <div class="player-card" id="cr7">
+        <h2 class="player-name">克里斯蒂亞諾·羅納度 (Cristiano Ronaldo / C羅)</h2>
+        <table>
+            <tr><th>場上位置</th><td>前鋒 (Forward)</td></tr>
+            <tr><th>個人資料</th><td>1985年生，葡萄牙籍。足壇史上進球紀錄保持人，以極致的自律與絕佳的身體素質聞名。</td></tr>
+            <tr><th>曾效力俱樂部</th><td>里斯本競技、曼聯、皇家馬德里、尤文圖斯、艾納斯 (Al-Nassr)</td></tr>
+            <tr><th>國家隊生涯</th><td>葡萄牙國家隊 (隊長，歷史出場與進球最多保持者)</td></tr>
+            <tr><th>生涯數據</th><td>生涯正式比賽進球數突破 <span class="highlight">900+</span> 球</td></tr>
+            <tr><th>主要榮譽</th><td>5座金球獎、5座歐洲冠軍聯賽冠軍、2016年歐洲國家盃冠軍</td></tr>
+        </table>
+    </div>
 
-</body>
-</html>
+    <div class="player-card" id="messi">
+        <h2 class="player-name">里奧·梅西 (Lionel Messi)</h2>
+        <table>
+            <tr><th>場上位置</th><td>前鋒 / 進攻中場 (Forward / AM)</td></tr>
+            <tr><th>個人資料</th><td>1987年生，阿根廷籍。被廣泛視為足壇歷史第一人 (GOAT)，擁有無與倫比的盤帶與傳球視野。</td></tr>
+            <tr><th>曾效力俱樂部</th><td>巴塞隆納、巴黎聖日耳曼、邁阿密國際 (Inter Miami)</td></tr>
+            <tr><th>國家隊生涯</th><td>阿根廷國家隊 (隊長)</td></tr>
+            <tr><th>生涯數據</th><td>生涯正式比賽進球 <span class="highlight">800+</span> 球，助攻數歷史頂尖</td></tr>
+            <tr><th>主要榮譽</th><td>8座金球獎(歷史最多)、2022年世界盃冠軍、2座美洲盃冠軍、4座歐冠冠軍</td></tr>
+        </table>
+    </div>
+
+    <div class="player-card" id="neymar">
+        <h2 class="player-name">內馬爾 (Neymar Jr)</h2>
+        <table>
+            <tr><th>場上位置</th><td>左翼鋒 / 進攻中場 (Winger / AM)</td></tr>
+            <tr><th>個人資料</th><td>1992年生，巴西籍。桑巴足球的當代代表，華麗的彩虹過人與突破能力極強。</td></tr>
+            <tr><th>曾效力俱樂部</th><td>桑托斯、巴塞隆納、巴黎聖日耳曼、希拉爾 (Al-Hilal)</td></tr>
+            <tr><th>國家隊生涯</th><td>巴西國家隊 (超越比利成為隊史神射手)</td></tr>
+            <tr><th>生涯數據</th><td>俱樂部與國家隊生涯累計進球 <span class="highlight">400+</span> 球</td></tr>
+            <tr><th>主要榮譽</th><td>1座歐冠冠軍、2座西甲冠軍、2座法甲冠軍、2016奧運男足金牌</td></tr>
+        </table>
+    </div>
+
+    <div class="player-card" id="mbappe">
+        <h2 class="player-name">基利安·姆巴佩 (Kylian Mbappé)</h2>
+        <table>
+            <tr><th>場上位置</th><td>前鋒 / 翼鋒 (Forward / Winger)</td></tr>
+            <tr><th>個人資料</th><td>1998年生，法國籍。當代表演最卓越的速度型前鋒，年紀輕輕即在世界盃決賽大放異彩。</td></tr>
+            <tr><th>曾效力俱樂部</th><td>摩納哥、巴黎聖日耳曼、皇家馬德里 (Real Madrid)</td></tr>
+            <tr><th>國家隊生涯</th><td>法國國家隊</td></tr>
+            <tr><th>生涯數據</th><td>年僅25歲時便已突破生涯 <span class="highlight">300+</span> 顆進球</td></tr>
+            <tr><th>主要榮譽</th><td>2018年世界盃冠軍、2022年世界盃金靴獎、7座法甲冠軍</td></tr>
+        </table>
+    </div>
+
+    <div class="player-card" id="haaland">
+        <h2 class="player-name">埃爾林·哈蘭德 (Erling Haaland)</h2>
+        <table>
+            <tr><th>場上位置</th><td>中鋒 (Striker)</td></tr>
+            <tr><th>個人資料</th><td>2000年生，挪威籍。進球機器，具備恐怖的爆發力與禁區嗅覺，屢屢打破英超進球紀錄。</td></tr>
+            <tr><th>曾效力俱樂部</th><td>布呂訥、莫爾德、薩爾斯堡紅牛、多特蒙德、曼徹斯特城 (Manchester City)</td></tr>
+            <tr><th>國家隊生涯</th><td>挪威國家隊</td></tr>
+            <tr><th>生涯數據</th><td>在英超單季攻入 <span class="highlight">36</span> 球打破歷史紀錄，生涯效率接近每場1球</td></tr>
+            <tr><th>主要榮譽</th><td>1座歐冠冠軍、2座英超冠軍、歐洲金靴獎、英超單季最高進球紀錄</td></tr>
+        </table>
+    </div>
+
+    <div class="player-card" id="olise">
+        <h2 class="player-name">麥可·奧利塞 (Michael Olise)</h2>
+        <table>
+            <tr><th>場上位置</th><td>右翼鋒 (Right Winger)</td></tr>
+            <tr><th>個人資料</th><td>2001年生，法國籍。新一代極具創造力的邊路好手，擅長內切射門與致命傳中.</td></tr>
+            <tr><th>曾效力俱樂部</th><td>雷丁、水晶宮、拜仁慕尼黑 (Bayern Munich)</td></tr>
+            <tr><th>國家隊生涯</th><td>法國國家隊 / 法國U23奧運隊</td></tr>
+            <tr><th>生涯數據</th><td>在英超及德甲展現出極高的「每90分鐘助攻/進球」效率</td></tr>
+            <tr><th>主要榮譽</th><td>2024年巴黎奧運男足銀牌、雷丁時期英跨年度最佳青年球員</td></tr>
+        </table>
+    </div>
+
+    <div class="player-card" id="bellingham">
+        <h2 class="player-name">裘德·貝林漢姆 (Jude Bellingham)</h2>
+        <table>
+            <tr><th>場上位置</th><td>進攻中場 / 全能中場 (Midfielder)</td></tr>
+            <tr><th>個人資料</th><td>2003年生，英格蘭籍。年少成名的全能中場，具備極高的足球智商與驚人的插上進球能力。</td></tr>
+            <tr><th>曾效力俱樂部</th><td>伯明罕城、多特蒙德、皇家馬德里 (Real Madrid)</td></tr>
+            <tr><th>國家隊生涯</th><td>英格蘭國家隊</td></tr>
+            <tr><th>生涯數據</th><td>加盟皇馬首賽季即繳出單季 <span class="highlight">23</span> 球的現象級數據</td></tr>
+            <tr><th>主要榮譽</th><td>1座歐冠冠軍、1座西甲冠軍、德甲年度最佳球員、金童獎</td></tr>
+        </table>
+    </div>
+
+    <div class="player-card" id="dembele">
+        <h2 class="player-name">奧斯曼·登貝萊 (Ousmane Dembélé)</h2>
+        <table>
+            <tr><th>場上位置</th><td>翼鋒 (Winger)</td></tr>
+            <tr><th>個人資料</th><td>1997年生，法國籍。頂級的雙腳均衡度，左右腳都能傳能射，變向突破速度極快。</td></tr>
+            <tr><th>曾效力俱樂部</th><td>雷恩、多特蒙德、巴塞隆納、巴黎聖日耳曼 (PSG)</td></tr>
+            <tr><th>國家隊生涯</th><td>法國國家隊</td></tr>
+            <tr><th>生涯數據</th><td>生涯以高助攻率著稱，曾多次榮登西甲及法甲助攻榜前列</td></tr>
+            <tr><th>主要榮譽</th><td>2018年世界盃冠軍、3座西甲冠軍、1座法甲冠軍</td></tr>
+        </table>
+    </div>
+
+    <div class="player-card" id="vinicius">
+        <h2 class="player-name">維尼修斯 (Vinícius Júnior)</h2>
+        <table>
+            <tr><th>場上位置</th><td>左翼鋒 (Left Winger)</td></tr>
+            <tr><th>個人資料</th><td>2000年生，巴西籍。當今足壇最具破壞力的左路過人狂魔，也是皇馬新一代的進攻核心。</td></tr>
+            <tr><th>曾效力俱樂部</th><td>佛拉門戈、皇家馬德里 (Real Madrid)</td></tr>
+            <tr><th>國家隊生涯</th><td>巴西國家隊</td></tr>
+            <tr><th>生涯數據</th><td>連續多個賽季在歐冠與西甲賽場貢獻「雙十」(進球與助攻皆達雙位數)</td></tr>
+            <tr><th>主要榮譽</th><td>2座歐冠冠軍(並在決賽進球)、3座西甲冠軍、世俱盃金球獎</td></tr>
+        </table>
+    </div>
+
+    <div class="player-card" id="yamal">
+        <h2 class="player-name">拉明·亞馬爾 (Lamine Yamal)</h2>
+        <table>
+            <tr><th>場上位置</th><td>右翼鋒 (Right Winger)</td></tr>
+            <tr><th>個人資料</th><td>2007年生，西班牙籍。拉瑪西亞青訓最新奇蹟，刷新了足壇無數個「歷史最年輕」紀錄。</td></tr>
+            <tr><th>曾效力俱樂部</th><td>巴塞隆納 (Barcelona)</td></tr>
+            <tr><th>國家隊生涯</th><td>西班牙國家隊</td></tr>
+            <tr><th>生涯數據</th><td>2024歐國盃以 <span class="highlight">4</span> 次助攻成為助攻王，震驚世界</td></tr>
+            <tr><th>主要榮譽</th><td>2024年歐洲國家盃冠軍、2024歐國盃最佳年輕球員、1座西甲冠軍</td></tr>
+        </table>
+    </div>
+
+    <div class="player-card" id="modric">
+        <h2 class="player-name">盧卡·莫德里奇 (Luka Modrić)</h2>
+        <table>
+            <tr><th>場上位置</th><td>中場指揮官 (Central Midfielder)</td></tr>
+            <tr><th>個人資料</th><td>1985年生，克羅埃西亞籍。傳球大師，擁有招牌的外腳背傳球，是皇馬與國家隊的靈魂。</td></tr>
+            <tr><th>曾效力俱樂部</th><td>薩格勒布迪納摩、熱刺、皇家馬德里 (Real Madrid)</td></tr>
+            <tr><th>國家隊生涯</th><td>克羅埃西亞國家隊 (隊長，帶領格子軍團連兩屆世界盃奪牌)</td></tr>
+            <tr><th>生涯數據</th><td>生涯俱樂部出場次數突破 <span class="highlight">800+</span> 場，長年保持巔峰狀態</td></tr>
+            <tr><th>主要榮譽</th><td>2018年金球獎(打破梅羅壟斷)、6座歐冠冠軍、世界盃亞軍及季軍</td></tr>
+        </table>
+    </div>
+
+    <div class="player-card" id="doue">
+        <h2 class="player-name">德西雷·杜埃 (Désiré Doué)</h2>
+        <table>
+            <tr><th>場上位置</th><td>進攻中場 / 翼鋒 (Attacking Midfielder / Winger)</td></tr>
+            <tr><th>個人資料</th><td>2005年生，法國籍。兼具身體對抗與細膩技術的中場新星，盤帶突破能力極強。</td></tr>
+            <tr><th>曾效力俱樂部</th><td>雷恩、巴黎聖日耳曼 (PSG)</td></tr>
+            <tr><th>國家隊生涯</th><td>法國U23奧運隊 / 法國青年國家隊</td></tr>
+            <tr><th>生涯數據</th><td>法甲歷史上首位進球的2005年後出生球員</td></tr>
+            <tr><th>主要榮譽</th><td>2024年巴黎奧運男足銀牌、2022年歐洲U17錦標賽冠軍</td></tr>
+        </table>
+    </div>
+
+    <div class="player-card" id="pele">
+        <h2 class="player-name">比利 (Pelé) 【歷史傳奇】</h2>
+        <table>
+            <tr><th>場上位置</th><td>前鋒 / 前腰 (Forward)</td></tr>
+            <tr><th>個人資料</th><td>1940-2022，巴西籍。二十世紀最偉大的「球王」，足球運動的全球代言人。</td></tr>
+            <tr><th>曾效力俱樂部</th><td>桑托斯 (Santos)、紐約宇宙</td></tr>
+            <tr><th>國家隊生涯</th><td>巴西國家隊</td></tr>
+            <tr><th>生涯數據</th><td>金氏世界紀錄認證生涯進球超過 <span class="highlight">1200+</span> 球(含友誼賽)</td></tr>
